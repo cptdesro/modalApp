@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+// Fonts
+$font: 'Roboto', sans-serif;
+
+// Colors
+$color-black: #000;
+$color-white: #fff;
+
+$color-night-gray1: #fafbfc;
+$color-night-gray2: #eaebed;
+$color-night-gray3: #d6d8dc;
+$color-night-gray4: #adb2b9;
+$color-night-gray5: #858b96;
+$color-night-gray6: #717885;
+$color-night-gray7: #485262;
+$color-night-gray8: #343f51;
+$color-night-gray9: #202c40;
+$color-night-gray10: #1b2638;
+$color-night-gray11: #131c2b;
+$color-night-gray12: #03060a;
+
+$color-sky-gray1: #f9fafc;
+$color-sky-gray2: #f2f3f5;
+$color-sky-gray3: #e7eaee;
+$color-sky-gray4: #c4ccd5;
+$color-sky-gray5: #a6afbc;
+$color-sky-gray6: #8d98a9;
+$color-sky-gray7: #748296;
+$color-sky-gray8: #5f6b7b;
+$color-sky-gray9: #4a5360;
+$color-sky-gray10: #353c45;
+$color-sky-gray11: #202429;
+$color-sky-gray12: #0b0c0e;
+
+$color-accent1-lighter: #ecf6fe;
+$color-accent1-light: #8dccfb;
+$color-accent1-normal: #2ea2f8;
+$color-accent1-dark: #2a94e2;
+$color-accent1-darker: #0d2d44;
+
+$color-accent2-lighter: #e9f9f9;
+$color-accent2-light: #7edddd;
+$color-accent2-normal: #13c2c2;
+$color-accent2-dark: #12b1b1;
+$color-accent2-darker: #063535;
+
+$color-accent3-lighter: #fcebf3;
+$color-accent3-light: #f28bb9;
+$color-accent3-normal: #e82c80;
+$color-accent3-dark: #d32875;
+$color-accent3-darker: #400c23;
+
+$color-accent4-lighter: #f5effc;
+$color-accent4-light: #cdb1f0;
+$color-accent4-normal: #9254de;
+$color-accent4-dark: #854dca;
+$color-accent4-darker: #28173d;
+
+$color-accent5-lighter: #eceffd;
+$color-accent5-light: #a0b1f5;
+$color-accent5-normal: #2f54eb;
+$color-accent5-dark: #2b4dd6;
+$color-accent5-darker: #0d1741;
+
+$color-accent6-lighter: #e7f8f2;
+$color-accent6-light: #a2e3cd;
+$color-accent6-normal: #00b377;
+$color-accent6-dark: #00a36d;
+$color-accent6-darker: #003121;
+
+$color-accent7-lighter: #fdf7d4;
+$color-accent7-light: #faec94;
+$color-accent7-normal: #f5d614;
+$color-accent7-dark: #dfc313;
+$color-accent7-darker: #594f08;
+
+$color-accent8-lighter: #fff7e7;
+$color-accent8-light: #ffd78b;
+$color-accent8-normal: #ffa900;
+$color-accent8-dark: #e08a00;
+$color-accent8-darker: #462f00;
+
+$color-accent9-lighter: #fcebec;
+$color-accent9-light: #fad7d9;
+$color-accent9-normal: #e6272e;
+$color-accent9-dark: #d2242a;
+$color-accent9-darker: #3f0b0d;
+
+$color-success: $color-accent6-normal;
+$color-alert: $color-accent8-normal;
+$color-danger: $color-accent9-normal;
+$color-info: $color-accent5-normal;
+
+// font colors
+$base-text-color: $color-night-gray9;
+
+// Event colors
+$primary: $color-accent1-normal;
+$success: $color-accent6-normal;
+$error: $color-accent9-normal;
+$warning: $color-accent7-normal;
+
+// Box shadows
+$box-shadow1: 0 1px 1px 0 rgba(53, 64, 82, .15), 0 1px 1.5px 0 rgba(53, 64, 82, .08);
+$box-shadow2: 0 3px 3px 0 rgba(53, 64, 82, .14), 0 3px 3px 0 rgba(53, 64, 82, .1);
+$box-shadow3: 0 6px 3px 0 rgba(53, 64, 82, .14), 0 10px 10px 0 rgba(53, 64, 82, .12);
+$box-shadow4: 0 10px 16px 0 rgba(53, 64, 82, .14), 0 14px 14px 0 rgba(53, 64, 82, .15);
+$box-shadow5: 0 15px 6px 0 rgba(53, 64, 82, .14), 0 19px 19px 0 rgba(53, 64, 82, .14);
+
+$box-shadow1-reverse: 0 -1px 1px 0 rgba(53, 64, 82, .15), 0 -1px 1.5px 0 rgba(53, 64, 82, .08);
+$box-shadow2-reverse: 0 -3px 3px 0 rgba(53, 64, 82, .14), 0 -3px 3px 0 rgba(53, 64, 82, .1);
+$box-shadow3-reverse: 0 -6px 3px 0 rgba(53, 64, 82, .14), 0 -10px 10px 0 rgba(53, 64, 82, .12);
+$box-shadow4-reverse: 0 -10px 16px 0 rgba(53, 64, 82, .14), 0 -14px 14px 0 rgba(53, 64, 82, .15);
+$box-shadow5-reverse: 0 -15px 6px 0 rgba(53, 64, 82, .14), 0 -19px 19px 0 rgba(53, 64, 82, .14);
+
+// Box shadows dark theme
+$box-shadow1-dark: 0 1px 1px 0 rgba(13, 21, 33, .15), 0 1px 1.5px 0 rgba(13, 21, 33, .08);
+$box-shadow2-dark: 0 3px 3px 0 rgba(13, 21, 33, .14), 0 3px 3px 0 rgba(13, 21, 33, .1);
+$box-shadow3-dark: 0 6px 3px 0 rgba(13, 21, 33, .14), 0 10px 10px 0 rgba(13, 21, 33, .12);
+$box-shadow4-dark: 0 10px 16px 0 rgba(13, 21, 33, .14), 0 14px 14px 0 rgba(13, 21, 33, .15);
+$box-shadow5-dark: 0 15px 6px 0 rgba(13, 21, 33, .14), 0 19px 19px 0 rgba(13, 21, 33, .14);
+
+$box-shadow-focus: 0 0 2px 1px rgba(46, 162, 248, .6);
+
+$box-shadow1-dark-reverse: 0 -1px 1px 0 rgba(13, 21, 33, .15), 0 -1px 1.5px 0 rgba(13, 21, 33, .08);
+$box-shadow2-dark-reverse: 0 -3px 3px 0 rgba(13, 21, 33, .14), 0 -3px 3px 0 rgba(13, 21, 33, .1);
+$box-shadow3-dark-reverse: 0 -6px 3px 0 rgba(13, 21, 33, .14), 0 -10px 10px 0 rgba(13, 21, 33, .12);
+$box-shadow4-dark-reverse: 0 -10px 16px 0 rgba(13, 21, 33, .14), 0 -14px 14px 0 rgba(13, 21, 33, .15);
+$box-shadow5-dark-reverse: 0 -15px 6px 0 rgba(13, 21, 33, .14), 0 -19px 19px 0 rgba(13, 21, 33, .14);
+
+$transition: .2s ease;
+
+// Breakpoints
+$breakpoint-step: 240px;
+$mobile-portrait-min: $breakpoint-step + 1;           // 241px
+$mobile-portrait-mid: $breakpoint-step * 1.5;         // 360px
+$mobile-portrait-max: $breakpoint-step * 2;           // 480px
+
+$mobile-landscape-min: $breakpoint-step * 2 + 1;      // 481px
+$mobile-landscape-mid: $breakpoint-step * 2.5;        // 600px
+$mobile-landscape-max: $breakpoint-step * 3;          // 720px
+
+$tablet-portrait-min: $breakpoint-step * 3 + 1;       // 721px
+$tablet-portrait-mid: $breakpoint-step * 3.5;         // 840px
+$tablet-portrait-max: $breakpoint-step * 4;           // 960px
+
+$tablet-landscape-min: $breakpoint-step * 4 + 1;      // 961px
+$tablet-landscape-mid: $breakpoint-step * 4.5;        // 1080px
+$tablet-landscape-max: $breakpoint-step * 5;          // 1200px
+
+$standard-landscape-min: $breakpoint-step * 5 + 1;    // 1201px
+$standard-landscape-mid: $breakpoint-step * 5.5;      // 1320px
+$standard-landscape-max: $breakpoint-step * 6;        // 1440px
+
+$widescreen-landscape-min: $breakpoint-step * 6 + 1;  // 1441px
+$widescreen-landscape-mid: $breakpoint-step * 6.5;    // 1560px
+$widescreen-landscape-max: $breakpoint-step * 7;      // 1680px

@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+body {
+  color: #333;
+  font: 100% "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.app.modal-is-open {
+  background: #202c40;
+  box-shadow: 0 15px 6px 0 rgba(53, 64, 82, 0.14), 0 19px 19px 0 rgba(53, 64, 82, 0.14);
+  filter: blur(5px);
+  opacity: 0.7;
+}
+.app .app-header {
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+}
+.app .button-group {
+  margin-top: 20px;
+  text-align: center;
+}
+.app .button-group button {
+  margin-right: 5px;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.modal-main {
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  height: 45%;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+.modal-main.info {
+  border-top: 4px solid #2ea2f8;
+}
+.modal-main.success {
+  border-top: 4px solid #00b377;
+}
+.modal-main.alert {
+  border-top: 4px solid #f5d614;
+}
+.modal-main.danger {
+  border-top: 4px solid #e6272e;
+}
+.modal-main .header-section {
+  margin-bottom: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+.modal-main .header-section .close-icon {
+  float: right;
+}
+.modal-main .header-section .close-icon.not-closeable {
+  display: none;
+}
+.modal-main .content-section {
+  height: 65%;
+  margin-bottom: 36px;
+  margin-left: 36px;
+  margin-right: 36px;
+  margin-top: 32px;
+  position: absolute;
+  width: 93%;
+}
+.modal-main .content-section .title-section .state-icon {
+  float: left;
+}
+.modal-main .content-section .title-section .state-icon.info {
+  color: #2ea2f8;
+}
+.modal-main .content-section .title-section .state-icon.success {
+  color: #00b377;
+}
+.modal-main .content-section .title-section .state-icon.alert {
+  color: #f5d614;
+}
+.modal-main .content-section .title-section .state-icon.danger {
+  color: #e6272e;
+}
+.modal-main .content-section .title-section h3 {
+  margin-left: 36px;
+}
+.modal-main .content-section .content-body {
+  margin-left: 36px;
+  margin-right: 36px;
+}
+.modal-main .content-section .content-body p {
+  color: #202c40;
+  font-family: "Roboto", sans-serif;
+  font-size: 1vw;
+  text-align: justify;
+}
+.modal-main .footer-section {
+  bottom: 0;
+  margin-bottom: 12px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 12px;
+  position: absolute;
+  width: 97%;
+}
+.modal-main .footer-section .button-group {
+  float: right;
+}
+.modal-main .footer-section .button-group .confirm-button {
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+.modal-main .footer-section .button-group .confirm-button.info {
+  background-color: #2ea2f8;
+}
+.modal-main .footer-section .button-group .confirm-button.success {
+  background-color: #00b377;
+}
+.modal-main .footer-section .button-group .confirm-button.alert {
+  background-color: #f5d614;
+}
+.modal-main .footer-section .button-group .confirm-button.danger {
+  background-color: #e6272e;
+}
+.modal-main .footer-section .button-group .cancel-button {
+  background-color: #fff;
+  border: solid 1px #808080;
+  border-radius: 5px;
+  color: #000;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 12px;
+  padding: 15px 32px;
+  text-align: center;
+}
+.modal-main .footer-section .button-group .cancel-button:disabled {
+  background-color: #ccc;
+  border: 1px solid #999;
+  color: #666;
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+/*# sourceMappingURL=modal.css.map */

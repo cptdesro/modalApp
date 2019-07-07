@@ -1,0 +1,211 @@
+@import 'variables';
+
+$primary-color: #333;
+$grey: #808080;
+$modal-background-color: rgba(0, 0, 0, .6);
+$modal-background-color: rgba(0, 0, 0, .6);
+
+$cancel-button-color: #666;
+$cancel-button-border-color: #999;
+$cancel-button-background-color: #ccc;
+
+
+body {
+  color: $primary-color;
+  font: 100% $font;
+  font-family: $font;
+  margin: 0;
+}
+
+.app {
+  &.modal-is-open {
+    background: $color-night-gray9;
+    box-shadow: $box-shadow5;
+    filter: blur(5px);
+    opacity: .7;
+  }
+
+  .app-header {
+    align-items: center;
+    background-color: $primary-color;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    justify-content: center;
+  }
+
+  .button-group {
+    margin-top: 20px;
+    text-align: center;
+
+    button {
+      margin-right: 5px;
+    }
+  }
+}
+
+.modal {
+  background: $modal-background-color;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.modal-main {
+  background: $color-white;
+  border-radius: 5px 5px 0 0;
+  height: 45%;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+
+  &.info {
+    border-top: 4px solid $primary;
+  }
+
+  &.success {
+    border-top: 4px solid $success;
+  }
+
+  &.alert {
+    border-top: 4px solid $warning;
+  }
+
+  &.danger {
+    border-top: 4px solid $error;
+  }
+
+  .header-section {
+    margin-bottom: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+
+    .close-icon {
+      float: right;
+
+      &.not-closeable  {
+        display: none;
+      }
+    }
+  }
+
+  .content-section {
+    height: 65%;
+    margin-bottom: 36px;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-top: 32px;
+    position: absolute;
+    width: 93%;
+
+    .title-section {
+      .state-icon {
+        float: left;
+
+        &.info {
+          color: $primary;
+        }
+
+        &.success {
+          color: $success;
+        }
+
+        &.alert {
+          color: $warning;
+        }
+
+        &.danger {
+          color: $error;
+        }
+      }
+
+      h3 {
+        margin-left: 36px;
+      }
+    }
+
+    .content-body {
+      margin-left: 36px;
+      margin-right: 36px;
+
+      p {
+        color: $base-text-color;
+        font-family: $font;
+        font-size: 1vw;
+        text-align: justify;
+      }
+    }
+  }
+
+  .footer-section {
+    bottom: 0;
+    margin-bottom: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 12px;
+    position: absolute;
+    width: 97%;
+
+    .button-group {
+      float: right;
+
+      .confirm-button {
+        border: 0;
+        border-radius: 5px;
+        color: $color-white;
+        display: inline-block;
+        font-size: 16px;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+
+        &.info {
+          background-color: $primary;
+        }
+
+        &.success {
+          background-color: $success;
+        }
+
+        &.alert {
+          background-color: $warning;
+        }
+
+        &.danger {
+          background-color: $error;
+        }
+      }
+
+      .cancel-button {
+        background-color: $color-white;
+        border: solid 1px $grey;
+        border-radius: 5px;
+        color: $color-black;
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 12px;
+        padding: 15px 32px;
+        text-align: center;
+
+        &:disabled {
+          background-color: $cancel-button-background-color;
+          border: 1px solid $cancel-button-border-color;
+          color: $cancel-button-color;
+        }
+      }
+    }
+  }
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}

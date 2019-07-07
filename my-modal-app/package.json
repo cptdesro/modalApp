@@ -1,0 +1,40 @@
+{
+  "name": "my-modal-app",
+  "author": "Julien Desrochers",
+  "version": "0.1.0",
+  "private": true,
+  "sasslintConfig": "/sass-lint.yml",
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "npm run buildCss && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "buildCss": "sass src/modal.scss src/modal.css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.19"
+  }
+}
